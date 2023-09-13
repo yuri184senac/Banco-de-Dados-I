@@ -1,0 +1,26 @@
+
+
+INSERT INTO Medicos VALUES (30, '34565439543', 'Luiz Fernando', 40, 'Niteroi', 'Urologia', 301);
+
+UPDATE medicos set idade = 39 where codm=30;
+
+DELETE FROM medicos WHERE codm=30;
+
+INSERT INTO Pacientes VALUES (999,'12300008911', 'Fernando', 'M', 55, 'Teresópolis', 'Febre Amarela' );
+
+UPDATE Pacientes set idade=45 WHERE codp=999
+
+INSERT INTO Consultas VALUES (98,999,'2020-04-25','08:30:00' )
+
+UPDATE Consultas set hora='14:30:00' WHERE codm=98 AND codp=999
+
+
+
+
+
+
+select * from Consultas
+
+select * from Consultas WHERE codp=999
+
+DELETE FROM Consultas WHERE codm=98 AND codp=999;
